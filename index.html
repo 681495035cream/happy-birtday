@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Birthday</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Patrick+Hand&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="background-glow glow-1"></div>
+    <div class="background-glow glow-2"></div>
+    <div class="background-glow glow-3"></div>
+
+    <main class="container">
+      <section class="hero">
+        <p class="eyebrow">🎉 Special Day 🎉</p>
+        <h1>Happy Birthday</h1>
+        <h2>To <span id="name">You</span></h2>
+
+        <div class="cake-wrap">
+          <div class="cake">
+            <div class="cake-top"></div>
+            <div class="candles">
+              <span class="candle candle-1"></span>
+              <span class="candle candle-2"></span>
+              <span class="candle candle-3"></span>
+            </div>
+            <div class="icing"></div>
+            <div class="plate"></div>
+          </div>
+        </div>
+
+        <div class="message-card">
+          <p class="message">
+            Wishing you a year full of laughter, love, dreams, and sweet surprises.
+            May every day bring you joy, peace, and beautiful memories to cherish.
+          </p>
+          <p class="signature">With love and warm wishes ✨</p>
+        </div>
+
+        <div class="actions">
+          <button id="surpriseBtn" class="primary">Open Surprise</button>
+        </div>
+
+        <section class="wish-section">
+          <h3>ส่งคำอธิษฐานให้เจ้าของวันเกิด</h3>
+          <form id="wishForm" class="wish-form">
+            <div class="field-row">
+              <label for="guestName">ชื่อของคุณ</label>
+              <input id="guestName" name="guestName" type="text" maxlength="50" placeholder="เช่น แบม, ปุ๊ป, อันนา" required />
+            </div>
+
+            <div class="field-row">
+              <label for="wishText">คำอธิษฐาน / ความปรารถนา</label>
+              <textarea id="wishText" name="wishText" rows="4" maxlength="220" placeholder="เขียนคำอวยพรให้เต็มไปด้วยความหวังและความรัก..." required></textarea>
+            </div>
+
+            <button type="submit" class="secondary">ส่งคำอธิษฐาน</button>
+          </form>
+          <p id="wishStatus" class="wish-status" aria-live="polite"></p>
+        </section>
+
+        <section class="owner-panel">
+          <h3>ตรวจดูคำอธิษฐาน</h3>
+          <div class="owner-access">
+            <input id="ownerPass" type="password" placeholder="รหัสเจ้าของเว็บ" />
+            <button id="showWishesBtn" class="ghost">เปิดดูคำอธิษฐาน</button>
+          </div>
+          <div id="ownerWishes" class="owner-wishes hidden" aria-live="polite">
+            <div class="owner-controls">
+              <button id="hideWishesBtn" class="text-btn">ซ่อน</button>
+            </div>
+            <ul id="wishList" class="wish-list"></ul>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <div id="confetti-layer" aria-hidden="true"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

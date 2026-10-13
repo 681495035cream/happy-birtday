@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Warning</title>
+    <style>
+      :root {
+        --bg: #0b0b0d;
+        --bg-2: #1b0d0d;
+        --panel: rgba(28, 10, 10, 0.8);
+        --line: rgba(255, 88, 88, 0.55);
+        --red: #ff4d4d;
+        --red-soft: #ff7a7a;
+        --text: #f7f0f0;
+        --muted: #f3b2b2;
+      }
+
+      * { box-sizing: border-box; }
+
+      html, body {
+        margin: 0;
+        min-height: 100%;
+        background:
+          radial-gradient(circle at top, rgba(255, 76, 76, 0.15), transparent 35%),
+          linear-gradient(180deg, var(--bg) 0%, var(--bg-2) 100%);
+        color: var(--text);
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      body {
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+      }
+
+      .warning-box {
+        width: min(90vw, 760px);
+        padding: 2rem 1.5rem;
+        border: 2px solid var(--line);
+        border-radius: 24px;
+        background: var(--panel);
+        box-shadow: 0 0 0 1px rgba(255, 82, 82, 0.2), 0 18px 45px rgba(0, 0, 0, 0.45);
+        text-align: center;
+      }
+
+      .tag {
+        display: inline-block;
+        padding: 0.4rem 0.8rem;
+        border-radius: 999px;
+        background: rgba(255, 80, 80, 0.12);
+        border: 1px solid rgba(255, 107, 107, 0.45);
+        color: var(--red-soft);
+        font-size: 0.8rem;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(2.2rem, 6vw, 5rem);
+        color: var(--red);
+        line-height: 1.1;
+        text-shadow: 0 0 18px rgba(255, 77, 77, 0.45);
+      }
+
+      p {
+        margin: 1rem auto 0;
+        max-width: 620px;
+        font-size: clamp(1rem, 2vw, 1.2rem);
+        line-height: 1.8;
+        color: var(--muted);
+      }
+
+      .btn-row {
+        margin-top: 2rem;
+        display: flex;
+        justify-content: center;
+      }
+
+      .back-btn {
+        border: 1px solid rgba(255, 136, 136, 0.6);
+        background: linear-gradient(135deg, #2b0d0d 0%, #5a1212 100%);
+        color: white;
+        text-decoration: none;
+        padding: 0.9rem 1.5rem;
+        border-radius: 999px;
+        font: inherit;
+        font-weight: 700;
+        letter-spacing: 0.06em;
+        box-shadow: 0 14px 26px rgba(155, 21, 21, 0.38);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="warning-box">
+      <div class="tag">System Alert</div>
+      <h1>ไม่สมหวังหรอกไอควาย5555</h1>
+      <p>ล้อเล่นน่า!</p>
+      <div class="btn-row">
+        <a class="back-btn" href="https://www.tiktok.com/@bartcgnce5n/video/7242943733543537947?is_from_webapp=1&amp;sender_device=pc&amp;web_id=7653598429462365704" target="_blank" rel="noopener noreferrer">กดดูคำอวยพร</a>
+      </div>
+    </div>
+  </body>
+</html>
